@@ -1,0 +1,27 @@
+
+
+
+  module hlt = HLTHighLevel{
+    InputTag TriggerResultsTag = TriggerResults
+    bool byName = true
+    bool andOr= true // false=and-mode (all), true=or-mode (at least one)
+    vstring HLTPaths =
+      {"HLT1MuonNonIso"}
+  }
+
+  module etMinJetCountFilter = EtMinCaloJetCountFilter {
+    InputTag src = iterativeCone5CaloJets
+    uint32 minNumber = 2
+    double etMin = 50.0
+  }
+
+  sequence seqTestFilter = {  hlt , etMinJetCountFilter }
+
+  block blockTestFilter = {
+    untracked string filterName = "TestFilter"
+    untracked PSet dataset = {
+      untracked string dataTier = "AODSIM"
+    }
+    using AODSIMEventContent
+  }
+
