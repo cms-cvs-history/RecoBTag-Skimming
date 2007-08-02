@@ -1,5 +1,8 @@
 
+include "RecoBTag/Skimming/data/btagMuonInJet_HLT.cfi"
 include "RecoBTag/Skimming/data/btagMuonInJet.cfi"
 
-path btagMuonInJetPath = { btagMuonInJet }
-
+path btagMuonInJetPath = { 
+  #btagMuonInJetHLT,
+  btagMuonInJet 
+}

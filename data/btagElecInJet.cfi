@@ -2,12 +2,12 @@
 module btagElecInJet = BTagSkimLeptonJet {
 
   InputTag CaloJet = iterativeCone5CaloJets
-  untracked double MinimumCaloJetPt = 30.0
-  untracked double MaximumCaloJetEta= 2.5
+  untracked double MinimumCaloJetPt = 20.0
+  untracked double MaximumCaloJetEta= 3.0
   string LeptonType = 'electron'
   InputTag Lepton = pixelMatchGsfElectrons
-  untracked double MinimumLeptonPt = 2.0
-  untracked double MaximumLeptonEta= 1.2
+  untracked double MinimumLeptonPt = 6.0
+  untracked double MaximumLeptonEta= 2.5
   untracked double MaximumDeltaR = 0.4
   untracked double MinimumPtRel = 0.0
   untracked int32 MinimumNLeptonJet = 1

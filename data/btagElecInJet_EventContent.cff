@@ -28,7 +28,6 @@ replace RECOSIMbtagElecInJetEventContent.outputCommands += btagElecInJetEventCon
 block btagElecInJetEventSelection  = {
   untracked PSet SelectEvents = {
     vstring SelectEvents = {
-#     "btagElecInJetHLTPath",
       "btagElecInJetPath"
     }
   }

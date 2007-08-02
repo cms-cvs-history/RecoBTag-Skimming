@@ -1,0 +1,8 @@
+
+module btagMuonInJetHLT = HLTHighLevel{
+    InputTag TriggerResultsTag = TriggerResults
+    bool byName = true
+    bool andOr= true // false=and-mode (all), true=or-mode (at least one)
+    vstring HLTPaths =
+      {"HLTXMuonJets", "HLT1jet", "HLT2jet", "HLT3jet", "HLT4jet"}
+}   

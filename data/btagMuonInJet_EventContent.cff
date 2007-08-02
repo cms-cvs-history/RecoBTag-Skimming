@@ -28,7 +28,6 @@ replace RECOSIMbtagMuonInJetEventContent.outputCommands += btagMuonInJetEventCon
 block btagMuonInJetEventSelection  = {
   untracked PSet SelectEvents = {
     vstring SelectEvents = {
-#     "btagMuonInJetHLTPath",
       "btagMuonInJetPath"
     }
   }
