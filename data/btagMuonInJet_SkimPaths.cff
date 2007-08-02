@@ -1,0 +1,5 @@
+
+include "RecoBTag/Skimming/data/btagMuonInJet.cfi"
+
+path btagMuonInJetPath = { btagMuonInJet }
+

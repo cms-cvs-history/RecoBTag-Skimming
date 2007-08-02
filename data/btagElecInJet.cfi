@@ -1,5 +1,5 @@
 
-module BTagSkimElectronJetFilter = BTagSkimLeptonJet {
+module btagElecInJet = BTagSkimLeptonJet {
 
   InputTag CaloJet = iterativeCone5CaloJets
   untracked double MinimumCaloJetPt = 30.0

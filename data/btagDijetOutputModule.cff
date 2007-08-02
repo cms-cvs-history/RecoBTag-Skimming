@@ -1,0 +1,23 @@
+
+include "RecoBTag/Skimming/data/btagDijet_EventContent.cff"
+
+module btagDijetOutputModuleAODSIM = PoolOutputModule {
+  untracked string fileName = "btagDijetAODSIM.root"
+  using AODSIMbtagDijetEventContent	
+  using btagDijetEventSelection
+  untracked PSet datasets ={
+    untracked string dataTier = "USER"
+    untracked string filterName = "btagDijetAODSIM"
+  }
+}
+
+module btagDijetOutputModuleRECOSIM = PoolOutputModule {
+  untracked string fileName = "btagDijetRECOSIM.root"
+  using RECOSIMbtagDijetEventContent	
+  using btagDijetEventSelection
+  untracked PSet datasets ={
+    untracked string dataTier = "USER"
+    untracked string filterName = "btagDijetRECOSIM"
+  }
+}
+

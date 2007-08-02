@@ -1,0 +1,5 @@
+
+include "RecoBTag/Skimming/data/btagElecInJet.cfi"
+
+path btagElecInJetPath = { btagElecInJet }
+

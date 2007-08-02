@@ -1,0 +1,37 @@
+
+include "Configuration/EventContent/data/EventContent.cff"
+
+block  btagMuonInJetEventContent = {
+  untracked vstring outputCommands = {
+  }
+}
+
+
+block AODSIMbtagMuonInJetEventContent = {
+  untracked vstring outputCommands = { 
+  }
+}
+
+replace AODSIMbtagMuonInJetEventContent.outputCommands += AODSIMEventContent.outputCommands
+replace AODSIMbtagMuonInJetEventContent.outputCommands += btagMuonInJetEventContent.outputCommands
+
+
+block RECOSIMbtagMuonInJetEventContent = {
+  untracked vstring outputCommands = { 
+  }
+}
+
+replace RECOSIMbtagMuonInJetEventContent.outputCommands += RECOSIMEventContent.outputCommands
+replace RECOSIMbtagMuonInJetEventContent.outputCommands += btagMuonInJetEventContent.outputCommands
+
+
+block btagMuonInJetEventSelection  = {
+  untracked PSet SelectEvents = {
+    vstring SelectEvents = {
+#     "btagMuonInJetHLTPath",
+      "btagMuonInJetPath"
+    }
+  }
+}
+
+

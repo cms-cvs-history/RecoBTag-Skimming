@@ -1,0 +1,7 @@
+
+  module btagDijet = EtMinCaloJetCountFilter {
+    InputTag src = iterativeCone5CaloJets
+    uint32 minNumber = 2
+    double etMin = 20.0
+  }
+

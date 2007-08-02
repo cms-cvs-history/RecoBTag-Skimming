@@ -1,0 +1,4 @@
+
+include "RecoBTag/Skimming/data/btagDijet.cfi"
+
+path btagDijetPath = { btagDijet }
