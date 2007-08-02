@@ -1,0 +1,5 @@
+
+  include "RecoBTag/Skimming/data/btagDijet_SkimPaths.cff"
+  include "RecoBTag/Skimming/data/btagElecInJet_SkimPaths.cff"
+  include "RecoBTag/Skimming/data/btagMuonInJet_SkimPaths.cff"
+  include "RecoBTag/Skimming/data/btagGenBb_SkimPaths.cff"
