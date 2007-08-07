@@ -1,9 +1,12 @@
 
-module btagDijetHLT = HLTHighLevel{
+module btagDijet_HLT = HLTHighLevel{
     InputTag TriggerResultsTag = TriggerResults
     bool byName = true
     bool andOr= true // false=and-mode (all), true=or-mode (at least one)
-    vstring HLTPaths =
-      {"HLT1jet", "HLT2jet", "HLT3jet", "HLT4jet"}
+    vstring HLTPaths = { 
+      "HLT1jet", "HLT2jet", "HLT3jet", "HLT4jet", # multi-jet
+      "HLT1jetPE5", "CandHLT1jetPE7", # single jet prescaled
+      "HLT1Photon" # single photon
+    }
 }   
 

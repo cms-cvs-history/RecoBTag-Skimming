@@ -3,7 +3,7 @@ include "RecoBTag/Skimming/data/btagDijet.cfi"
 include "RecoBTag/Skimming/data/btagDijet_HLT.cfi"
 
 path btagDijetPath = { 
-  btagDijetHLT,
+  btagDijet_HLT,
   btagDijet
 }
 
