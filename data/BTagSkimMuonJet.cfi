@@ -1,0 +1,16 @@
+
+module BTagSkimMuonJetFilter = BTagSkimLeptonJet {
+
+  InputTag CaloJet = iterativeCone5CaloJets
+  untracked double MinimumCaloJetPt = 30.0
+  untracked double MaximumCaloJetEta= 2.5
+  string LeptonType = 'muon'
+  InputTag Lepton = globalMuons
+  untracked double MinimumLeptonPt = 6.0
+  untracked double MaximumLeptonEta= 2.2
+  untracked double MaximumDeltaR = 0.4
+  untracked double MinimumPtRel = 0.0
+  untracked int32 MinimumNLeptonJet = 1
+
+}
+
