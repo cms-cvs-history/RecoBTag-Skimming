@@ -1,4 +1,9 @@
 
 include "RecoBTag/Skimming/data/btagDijet.cfi"
+include "RecoBTag/Skimming/data/btagDijet_HLT.cfi"
 
-path btagDijetPath = { btagDijet }
+path btagDijetPath = { 
+  btagDijetHLT,
+  btagDijet
+}
+
