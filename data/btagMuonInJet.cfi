@@ -2,16 +2,15 @@
 module btagMuonInJet = BTagSkimLeptonJet {
 
   InputTag CaloJet = iterativeCone5CaloJets
-  untracked double MinimumCaloJetPt = 20.0
-  untracked double MaximumCaloJetEta= 3.0
+  double MinimumCaloJetPt = 20.0
+  double MaximumCaloJetEta= 3.0
   string LeptonType = 'muon'
-# InputTag Lepton = globalMuons
   InputTag Lepton = muons
-  untracked double MinimumLeptonPt = 6.0
-  untracked double MaximumLeptonEta= 2.5
-  untracked double MaximumDeltaR = 0.4
-  untracked double MinimumPtRel = 0.0
-  untracked int32 MinimumNLeptonJet = 1
+  double MinimumLeptonPt = 6.0
+  double MaximumLeptonEta= 2.5
+  double MaximumDeltaR = 0.4
+  double MinimumPtRel = 0.0
+  int32 MinimumNLeptonJet = 1
 
 }
 
