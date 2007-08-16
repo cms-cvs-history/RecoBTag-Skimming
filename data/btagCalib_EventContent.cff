@@ -1,0 +1,43 @@
+
+include "Configuration/EventContent/data/EventContent.cff"
+
+# in case we want only the tagInfos and nothing more:
+# (this means we need the jets for pt, eta and the JTA for being able
+#  to find the jet ref from the tag info)
+
+block  BTAGCALAbtagCalibEventContent = {
+  untracked vstring outputCommands = {
+                        "drop *",
+                        "keep *_mcJetFlavour_*_*",
+                        "keep *_mcPhysJetFlavour_*_*",
+                        "keep *_iterativeCone5CaloJets_*_*",
+                        "keep *_jetTracksAssociator_*_*",
+                        "keep *_impactParameterTagInfos_*_*",
+                        "keep *_combinedSVTagInfos_*_*"
+  }
+}
+
+
+# in case we want to be able to compute the TagInfos ourselves
+# (basically we need tracks and primary vertices for that)
+
+block  BTAGCALBbtagCalibEventContent = {
+  untracked vstring outputCommands = {
+                       "drop *",
+                       "keep *_mcJetFlavour_*_*",
+                       "keep *_mcPhysJetFlavour_*_*",
+                       "keep *_iterativeCone5CaloJets_*_*",
+                       "keep *_ctfWithMaterialTracks_*_*",
+                       "keep *_offlinePrimaryVerticesFromCTFTracks_*_*"
+    }
+}
+
+
+block btagCalibEventSelection  = {
+  untracked PSet SelectEvents = {
+    vstring SelectEvents = {
+      "btagCalibPath"
+    }
+  }
+}
+

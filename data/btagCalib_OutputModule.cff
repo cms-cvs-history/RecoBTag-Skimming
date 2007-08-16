@@ -1,0 +1,23 @@
+
+include "RecoBTag/Skimming/data/btagCalib_EventContent.cff"
+
+module btagCalibOutputModuleBTAGCALA = PoolOutputModule {
+  untracked string fileName = "btagCalibBTAGCALA.root"
+  using BTAGCALAbtagCalibEventContent
+  using btagCalibEventSelection
+  untracked PSet datasets ={
+    untracked string dataTier = "USER"
+    untracked string filterName = "btagCalibBTAGCALA"
+  }
+}
+
+module btagCalibOutputModuleBTAGCALB = PoolOutputModule {
+  untracked string fileName = "btagCalibBTAGCALB.root"
+  using BTAGCALBbtagCalibEventContent
+  using btagCalibEventSelection
+  untracked PSet datasets ={
+    untracked string dataTier = "USER"
+    untracked string filterName = "btagCalibBTAGCALB"
+  }
+}
+

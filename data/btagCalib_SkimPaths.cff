@@ -1,0 +1,34 @@
+
+
+       module mcJetFlavour = MCJetFlavour {
+                InputTag jets           = iterativeCone5CaloJets
+                PSet jetFlavourIdentifier = {
+                        string mcSource                 = "source"
+                        bool fillPartons                = true
+                        bool fillHeavyHadrons           = false
+                        bool fillLeptons                = false
+                        double coneSizeToAssociate      = 0.3
+                        bool physicsDefinition          = false
+                        bool rejectBCSplitting          = false
+                        vstring vetoFlavour             = { }
+                }
+        }
+
+        module mcPhysJetFlavour = MCJetFlavour {
+                InputTag jets           = iterativeCone5CaloJets
+                PSet jetFlavourIdentifier = {
+                        string mcSource                 = "source"
+                        bool fillPartons                = true
+                        bool fillHeavyHadrons           = false
+                        bool fillLeptons                = false
+                        double coneSizeToAssociate      = 0.3
+                        bool physicsDefinition          = true
+                        bool rejectBCSplitting          = false
+                        vstring vetoFlavour             = { }
+                }
+        }
+
+
+path btagCalibPath = {
+mcJetFlavour & mcPhysJetFlavour
+}
