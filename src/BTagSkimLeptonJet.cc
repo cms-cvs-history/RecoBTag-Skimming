@@ -1,8 +1,8 @@
 /** \class BTaSkimLeptonJet
  *
  *
- * $Date: 2007/08/02 22:50:50 $
- * $Revision: 1.2 $
+ * $Date: 2007/08/28 21:42:45 $
+ * $Revision: 1.4 $
  *
  * \author Francisco Yumiceva, FERMILAB
  *
@@ -17,7 +17,9 @@
 
 #include "DataFormats/JetReco/interface/CaloJet.h"
 #include "DataFormats/MuonReco/interface/Muon.h"
+#include "DataFormats/MuonReco/interface/MuonFwd.h"
 #include "DataFormats/EgammaCandidates/interface/PixelMatchGsfElectron.h"
+#include "DataFormats/EgammaCandidates/interface/PixelMatchGsfElectronFwd.h"
 
 #include "RecoBTag/Skimming/interface/BTagSkimLeptonJet.h"
 
