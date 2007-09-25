@@ -5,7 +5,7 @@ module btagCalibOutputModuleBTAGCALA = PoolOutputModule {
   untracked string fileName = "btagCalibBTAGCALA.root"
   using BTAGCALAbtagCalibEventContent
   using btagCalibEventSelection
-  untracked PSet datasets ={
+  untracked PSet dataset ={
     untracked string dataTier = "USER"
     untracked string filterName = "btagCalibBTAGCALA"
   }
@@ -15,7 +15,7 @@ module btagCalibOutputModuleBTAGCALB = PoolOutputModule {
   untracked string fileName = "btagCalibBTAGCALB.root"
   using BTAGCALBbtagCalibEventContent
   using btagCalibEventSelection
-  untracked PSet datasets ={
+  untracked PSet dataset ={
     untracked string dataTier = "USER"
     untracked string filterName = "btagCalibBTAGCALB"
   }

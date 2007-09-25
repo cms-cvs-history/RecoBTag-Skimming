@@ -5,7 +5,7 @@ module btagGenBbOutputModuleAODSIM = PoolOutputModule {
   untracked string fileName = "btagGenBbAODSIM.root"
   using AODSIMbtagGenBbEventContent	
   using btagGenBbEventSelection
-  untracked PSet datasets ={
+  untracked PSet dataset ={
     untracked string dataTier = "USER"
     untracked string filterName = "btagGenBbAODSIM"
   }
@@ -15,7 +15,7 @@ module btagGenBbOutputModuleRECOSIM = PoolOutputModule {
   untracked string fileName = "btagGenBbRECOSIM.root"
   using RECOSIMbtagGenBbEventContent	
   using btagGenBbEventSelection
-  untracked PSet datasets ={
+  untracked PSet dataset ={
     untracked string dataTier = "USER"
     untracked string filterName = "btagGenBbRECOSIM"
   }

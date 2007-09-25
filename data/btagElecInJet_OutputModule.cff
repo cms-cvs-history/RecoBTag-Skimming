@@ -5,7 +5,7 @@ module btagElecInJetOutputModuleAODSIM = PoolOutputModule {
   untracked string fileName = "btagElecInJetAODSIM.root"
   using AODSIMbtagElecInJetEventContent	
   using btagElecInJetEventSelection
-  untracked PSet datasets ={
+  untracked PSet dataset ={
     untracked string dataTier = "USER"
     untracked string filterName = "btagElecInJetAODSIM"
   }
@@ -15,7 +15,7 @@ module btagElecInJetOutputModuleRECOSIM = PoolOutputModule {
   untracked string fileName = "btagElecInJetRECOSIM.root"
   using RECOSIMbtagElecInJetEventContent	
   using btagElecInJetEventSelection
-  untracked PSet datasets ={
+  untracked PSet dataset ={
     untracked string dataTier = "USER"
     untracked string filterName = "btagElecInJetRECOSIM"
   }
