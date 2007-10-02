@@ -8,7 +8,7 @@ include "Configuration/EventContent/data/EventContent.cff"
 block  BTAGCALAbtagCalibEventContent = {
   untracked vstring outputCommands = {
                         "drop *",
-                        "keep *_mcJetFlavour_*_*",
+                        "keep *_mcAlgoJetFlavour_*_*",
                         "keep *_mcPhysJetFlavour_*_*",
                         "keep *_iterativeCone5CaloJets_*_*",
                         "keep *_jetTracksAssociator_*_*",
@@ -24,7 +24,7 @@ block  BTAGCALAbtagCalibEventContent = {
 block  BTAGCALBbtagCalibEventContent = {
   untracked vstring outputCommands = {
                        "drop *",
-                       "keep *_mcJetFlavour_*_*",
+                       "keep *_mcAlgoJetFlavour_*_*",
                        "keep *_mcPhysJetFlavour_*_*",
                        "keep *_iterativeCone5CaloJets_*_*",
                        "keep *_ctfWithMaterialTracks_*_*",
