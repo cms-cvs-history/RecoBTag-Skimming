@@ -1,0 +1,11 @@
+include "RecoBTag/Skimming/data/btagGenBb_EventContent.cff"
+
+module btagGenBbOutputModuleAODSIM = PoolOutputModule {
+  untracked string fileName = "btagGenBbAODSIM.root"
+  using AODSIMbtagGenBbEventContent	
+  using btagGenBbEventSelection
+  untracked PSet dataset ={
+    untracked string dataTier = "USER"
+    untracked string filterName = "btagGenBbAODSIM"
+  }
+}

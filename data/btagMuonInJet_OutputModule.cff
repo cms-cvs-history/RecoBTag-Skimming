@@ -1,23 +1,2 @@
-
-include "RecoBTag/Skimming/data/btagMuonInJet_EventContent.cff"
-
-module btagMuonInJetOutputModuleAODSIM = PoolOutputModule {
-  untracked string fileName = "btagMuonInJetAODSIM.root"
-  using AODSIMbtagMuonInJetEventContent	
-  using btagMuonInJetEventSelection
-  untracked PSet dataset ={
-    untracked string dataTier = "USER"
-    untracked string filterName = "btagMuonInJetAODSIM"
-  }
-}
-
-module btagMuonInJetOutputModuleRECOSIM = PoolOutputModule {
-  untracked string fileName = "btagMuonInJetRECOSIM.root"
-  using RECOSIMbtagMuonInJetEventContent	
-  using btagMuonInJetEventSelection
-  untracked PSet dataset ={
-    untracked string dataTier = "USER"
-    untracked string filterName = "btagMuonInJetRECOSIM"
-  }
-}
-
+include "RecoBTag/Skimming/data/btagMuonInJetOutputModuleAODSIM.cfi"
+include "RecoBTag/Skimming/data/btagMuonInJetOutputModuleRECOSIM.cfi"

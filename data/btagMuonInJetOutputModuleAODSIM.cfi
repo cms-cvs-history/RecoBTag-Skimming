@@ -1,0 +1,12 @@
+include "RecoBTag/Skimming/data/btagMuonInJet_EventContent.cff"
+
+module btagMuonInJetOutputModuleAODSIM = PoolOutputModule {
+  untracked string fileName = "btagMuonInJetAODSIM.root"
+  using AODSIMbtagMuonInJetEventContent	
+  using btagMuonInJetEventSelection
+  untracked PSet dataset ={
+    untracked string dataTier = "USER"
+    untracked string filterName = "btagMuonInJetAODSIM"
+  }
+}
+

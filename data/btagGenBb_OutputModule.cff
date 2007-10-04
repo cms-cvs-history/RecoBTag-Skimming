@@ -1,22 +1,2 @@
-
-include "RecoBTag/Skimming/data/btagGenBb_EventContent.cff"
-
-module btagGenBbOutputModuleAODSIM = PoolOutputModule {
-  untracked string fileName = "btagGenBbAODSIM.root"
-  using AODSIMbtagGenBbEventContent	
-  using btagGenBbEventSelection
-  untracked PSet dataset ={
-    untracked string dataTier = "USER"
-    untracked string filterName = "btagGenBbAODSIM"
-  }
-}
-
-module btagGenBbOutputModuleRECOSIM = PoolOutputModule {
-  untracked string fileName = "btagGenBbRECOSIM.root"
-  using RECOSIMbtagGenBbEventContent	
-  using btagGenBbEventSelection
-  untracked PSet dataset ={
-    untracked string dataTier = "USER"
-    untracked string filterName = "btagGenBbRECOSIM"
-  }
-}
+include "RecoBTag/Skimming/data/btagGenBbOutputModuleAODSIM.cfi"
+include "RecoBTag/Skimming/data/btagGenBbOutputModuleRECOSIM.cfi"
