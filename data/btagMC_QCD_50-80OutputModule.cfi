@@ -1,0 +1,13 @@
+include "Configuration/EventContent/data/EventContent.cff"
+include "RecoBTag/Skimming/data/btagMC_QCD_50-80_EventContent.cff"
+
+module btagMC_QCD_50-80OutputModule = PoolOutputModule {
+  untracked string fileName = "btagMC_QCD_50-80.root"
+  using FEVTSIMEventContent
+  using btagMC_QCD_50-80EventSelection
+  untracked PSet dataset ={
+    untracked string dataTier = "USER"
+    untracked string filterName = "btagMC_QCD_50-80"
+  }
+}
+

@@ -1,0 +1,16 @@
+include "RecoBTag/Skimming/data/btagMC_QCD_800-1000.cfi"
+
+block btagMC_QCD_800-1000EventContent = {
+  untracked vstring outputCommands = {
+  }
+}
+
+
+block btagMC_QCD_800-1000EventSelection  = {
+  untracked PSet SelectEvents = {
+    vstring SelectEvents = {
+      "btagMC_QCD_800-1000Path"
+    }
+  }
+}
+
