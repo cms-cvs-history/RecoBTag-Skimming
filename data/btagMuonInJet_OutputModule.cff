@@ -1,2 +1,0 @@
-include "RecoBTag/Skimming/data/btagMuonInJetOutputModuleAODSIM.cfi"
-include "RecoBTag/Skimming/data/btagMuonInJetOutputModuleRECOSIM.cfi"
