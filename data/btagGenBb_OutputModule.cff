@@ -1,2 +1,0 @@
-include "RecoBTag/Skimming/data/btagGenBbOutputModuleAODSIM.cfi"
-include "RecoBTag/Skimming/data/btagGenBbOutputModuleRECOSIM.cfi"
