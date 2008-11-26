@@ -1,8 +1,0 @@
-
-include "RecoBTag/Skimming/data/btagElecInJet_HLT.cfi"
-include "RecoBTag/Skimming/data/btagElecInJet.cfi"
-
-path btagElecInJetPath = {
-  btagElecInJet_HLT,
-  btagElecInJet
-}
