@@ -1,4 +1,0 @@
-include "RecoBTag/Skimming/data/btagMC_QCD_20-50.cfi"
-
-
-path btagMC_QCD_20-50Path = { btagMC_QCD_20-50 }

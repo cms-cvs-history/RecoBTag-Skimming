@@ -1,8 +1,0 @@
-
-  module btagMC_QCD_80-120 = BTagSkimMC {
-    untracked bool verbose = false
-    double pthat_min = 80
-    double pthat_max = 120
-    string mcProcess = "QCD"
-  }
-
