@@ -1,4 +1,0 @@
-  include "RecoBTag/Skimming/data/btagDijet_OutputModule.cff"
-  include "RecoBTag/Skimming/data/btagElecInJet_OutputModule.cff"
-  include "RecoBTag/Skimming/data/btagMuonInJet_OutputModule.cff"
-  include "RecoBTag/Skimming/data/btagGenBb_OutputModule.cff"
