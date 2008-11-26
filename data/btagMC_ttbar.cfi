@@ -1,8 +1,0 @@
-
-  module btagMC_ttbar = BTagSkimMC {
-    untracked bool verbose = false
-    string mcProcess = "ttbar"
-    double pthat_min = 50
-    double pthat_max = 80
-  }
-

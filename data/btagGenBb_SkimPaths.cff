@@ -1,5 +1,0 @@
-
-include "RecoBTag/Skimming/data/btagGenBb.cfi"
-
-path btagGenBbPath = { btagGenBb }
-
