@@ -1,8 +1,0 @@
-
-module  btagDijet_HLT = hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
-
-replace btagDijet_HLT.HLTPaths = { 
-      "HLT1jet", "HLT_DoubleJet150", "HLT_TripleJet85", "HLT_QuadJet60", # multi-jet
-      "HLT1jetPE5", "CandHLT1jetPE7" # single jet prescaled
-}   
-
