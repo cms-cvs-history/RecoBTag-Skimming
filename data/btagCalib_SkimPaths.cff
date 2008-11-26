@@ -1,5 +1,0 @@
-include "RecoBTag/MCTools/data/mcJetFlavour.cff"
-
-path btagCalibPath = {
-    mcAlgoJetFlavour & mcPhysJetFlavour
-}
