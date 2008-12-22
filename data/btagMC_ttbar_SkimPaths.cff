@@ -1,4 +1,0 @@
-include "RecoBTag/Skimming/data/btagMC_ttbar.cfi"
-
-
-path btagMC_ttbarPath = { btagMC_ttbar }
